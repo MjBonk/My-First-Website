@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/Banksy/banksy-img/brickwall.jpeg);
+    background-repeat: 4;
+}
+
+:root {
+    --ff-title: 'Silkscreen', cursive;
+    --ff-bebas: 'Bebas Neue', sans-serif;
+    --clr-header: yellow;
+}
+
+.flex {
+    display: flex;
+}
+
+img {
+    display: block;
+}
+
+
+/* ---------------TEXT---------------- */
+h1 {
+    text-transform: uppercase;
+    font-family: var(--ff-title);
+    font-size: 4rem;
+}
+
+h2,
+h3,
+h4,
+h5 {
+    font-family: var(--ff-bebas);
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 2rem;
+    color: rgb(248, 56, 152);
+}
+
+p,
+a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul,li{
+    list-style: none;
+}
+
+
+
+/* ---------------HEADER ---------------- */
+header {
+    position: fixed;
+    width: 100vw;
+    background-color: var(--clr-header);
+    z-index: 3;
+    padding: 1rem;
+}
+.navigation-list{
+    display: flex;
+    justify-content: center;
+    gap: 2rem; 
+}
+.navigation-list li:hover{
+    text-decoration: underline;
+}
+.navigation-list a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+
+.navigation-list-dropdown{
+    position: absolute;
+    background-color: var(--clr-header);
+    border-radius: 5px;
+    display: none;
+}
+.navigation-list-dropdown li{
+    margin: 1rem;
+}
+
+.hover-dropdown:hover .navigation-list-dropdown{
+    display: block;
+}
+
+.header-introbox {
+    text-align: center;
+    font-size: larger;
+    padding-top: 2rem;
+    padding-bottom: .5rem;
+    background-color: var(--clr-header);
+}
+
+
+
+
+
+/* ---------------HERO ---------------- */
+.hero-section {
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+    margin: 1rem 0  -6rem -100vw;
+}
+.animation-objects {
+    position: relative;
+    z-index: 2;
+    width: 12rem;
+    animation: sub 40s linear infinite;
+}
+@keyframes sub {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 100vw;
+    }
+}
+
+
+
+
+/* ---------------MAIN ---------------- */
+.main-container {
+    width: 90vw;
+    max-width: 70rem;
+    gap: 3rem;
+    background-color: rgb(247, 247, 247);
+    margin: 0 auto;
+    padding: 2rem;
+    z-index: 1;
+    height: 100vh;
+}
+
+
+
+/* ---------------FOOTER---------------- */
+footer{
+    background-color: var(--clr-header);
+    padding: 5rem;
+    text-align: center;
+    z-index: 3;
+}

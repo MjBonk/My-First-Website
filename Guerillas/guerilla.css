@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/img/klotter.jpeg);
+    background-repeat: 4;
+}
+
+:root {
+    --ff-title: 'Climate Crisis', cursive;
+    --ff-bebas: 'Bebas Neue', sans-serif;
+
+    --clr-header: yellow;
+}
+
+.flex {
+    display: flex;
+}
+
+img {
+    display: block;
+}
+
+
+/* ---------------TEXT---------------- */
+h1 {
+    text-transform: uppercase;
+    font-family: var(--ff-title);
+}
+
+h2,
+h3,
+h4,
+h5 {
+    font-family: var(--ff-bebas);
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 2rem;
+    color: rgb(248, 56, 152);
+}
+
+p,
+a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul,li{
+    list-style: none;
+}
+
+
+
+/* ---------------HEADER ---------------- */
+header {
+    position: fixed;
+    width: 100vw;
+    background-color: var(--clr-header);
+    z-index: 3;
+    padding: 1rem;
+}
+.navigation-list{
+    display: flex;
+    justify-content: center;
+    gap: 2rem; 
+}
+.navigation-list li:hover{
+    text-decoration: underline;
+}
+.navigation-list a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+.navigation-list-dropdown{
+    position: absolute;
+    background-color: var(--clr-header);
+    border-radius: 5px;
+    display: none;
+}
+.navigation-list-dropdown li{
+    margin: 1rem 1rem .5rem 1rem;
+}
+.hover-dropdown:hover .navigation-list-dropdown{
+    display: block;
+}
+
+.header-introbox {
+    text-align: center;
+    font-size: larger;
+    padding-top: 3.5rem;
+    padding-bottom: 1rem;
+    background-color: var(--clr-header);
+}
+
+
+
+/* ---------------HERO ---------------- */
+.hero-section {
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+    margin: 0 0  -7rem -100vw;
+}
+.animation-objects {
+    position: relative;
+    z-index: 2;
+    width: 12rem;
+    animation: sub 40s linear infinite;
+}
+@keyframes sub {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 100vw;
+    }
+}
+
+
+/* ---------------MAIN CONTAINER---------------- */
+.main-container {
+    position: relative;
+    width: 90vw;
+    max-width: 70rem;
+    gap: 3rem;
+    flex-direction: column;
+    background-color: rgb(247, 247, 247);
+    margin: auto;
+    padding: 7rem 2rem 2rem 2rem;
+    z-index: 1;
+}
+.section-content {
+    margin: 1rem;
+}
+
+.article-text-and-music {
+    margin: 2rem 0;
+}
+
+.music-player {
+    margin-top: 1rem;
+    width: 100%;
+    padding: .5rem;
+    background-color: gray;
+    border-radius: 50px;
+}
+
+
+
+
+
+/* ---------------POSTER--------------- */
+.poster-paralax-image {
+    width: 80%;
+    max-width: 70rem;
+    margin: 0 auto;
+    transition: all 1s;
+    position: sticky;
+    top: 5%;
+}
+
+.poster-paralax-image:hover {
+    width: 90vw;
+}
+
+
+/* ---------------MAIN CONTAINER 2---------------- */
+.photo-gallery {
+    gap: 1rem;
+    overflow: scroll;
+    height: 15rem;
+}
+
+
+/* ---------------FOOTER---------------- */
+footer{
+    background-color: var(--clr-header);
+    padding: 5rem;
+    text-align: center;
+    z-index: 3;
+}
+
+
+@media (min-width:40rem) {
+    .section-text-container {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .section-content {
+        max-width: 27rem;
+    }
+
+    .second {
+        margin-top: 5rem;
+    }
+
+    .third {
+        margin-top: 10rem;
+    }
+
+    .article-text-and-music {
+        column-count: 2;
+    }
+}

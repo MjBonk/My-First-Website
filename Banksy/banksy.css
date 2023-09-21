@@ -133,12 +133,24 @@ header {
     margin: 0 auto;
     padding: 7rem 2rem 2rem 2rem;
     z-index: 1;
-    height: 100vh;
 }
 .column-container{
     gap: 2rem;
 }
+@media (max-width:45rem) {
+    .column-container{
+        flex-direction: column;
+    }
+}
 
+.text-section-2{
+    margin-top: 2rem;
+}
+
+.poster{
+    width: 100%;
+    margin: 1rem 0;
+}
 
 
 /* ---------------FOOTER---------------- */

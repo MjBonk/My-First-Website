@@ -110,8 +110,13 @@ header {
    position: absolute;
    background-color: var(--clr-header);
    border-radius: 0 0 5px 5px;
-   display: none;
    overflow: hidden;
+   height: 0;
+   margin-left: -15px;
+}
+.hover-dropdown:hover .navigation-list-dropdown {
+   height: 10rem;
+   transition: .2s ease-out;
 }
 
 .navigation-list-dropdown li {
@@ -120,20 +125,35 @@ header {
 
 .navigation-list-dropdown li:hover {
    background-color: #e0e002;
-   transition: .25s;
+   transition: .2s;
 }
 
-.hover-dropdown:hover .navigation-list-dropdown {
-   display: block;
-}
 
 .header-introbox {
    text-align: center;
-   font-size: larger;
    padding-top: 3.2rem;
    padding-bottom: 1rem;
    background-color: var(--clr-header);
 }
+
+
+
+
+
+
+
+
+/* ---------------LANDING PAGE-------------- */
+.landing-page{
+   display: flex;
+   text-align: center;
+   justify-content: center;
+   flex-direction: column;
+   background-image: url(/img/sub.png);
+   height: 100vh;
+   color: white;
+}
+
 
 
 
@@ -253,6 +273,7 @@ header {
    float: left;
    margin: 0 1rem;
 }
+@container ()
 
 
 

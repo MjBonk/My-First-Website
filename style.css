@@ -340,8 +340,24 @@ li {
 
 
 
-.grid {
+
+.grid__title{
    margin-top: 2rem;
+   justify-content: center;
+   align-items: center;
+   padding: 1rem 0;
+   white-space: nowrap;
+}
+.grid__title::before, .grid__title::after{
+   content: ""; 
+   display: block;
+   height: 5px;
+   width: 100%;
+   background-color: black;
+
+}
+
+.grid {
    display: grid;
    grid-gap: 1rem;
    grid-template-columns: repeat(2, 1fr);

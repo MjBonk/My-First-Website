@@ -3,13 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     background-image: url(/Banksy/banksy-img/brickwall.jpeg);
     background-repeat: 4;
 }
+
 .flex {
     display: flex;
 }
+
 img {
     object-fit: contain;
 }
@@ -32,26 +35,34 @@ h1 {
     font-family: var(--ff-title);
 }
 
-h2, h3, h4, h5 {
+h2,
+h3,
+h4,
+h5 {
     font-family: var(--ff-bebas);
     text-transform: uppercase;
 }
+
 h2 {
     font-size: 2rem;
 }
-p, a {
+
+p,
+a {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
     line-height: 1.5rem;
 }
+
 @media (max-width:45rem) {
-    p{
+    p {
         font-size: .85rem;
         line-height: 1.2rem;
     }
 }
 
-ul,li {
+ul,
+li {
     list-style: none;
 }
 
@@ -71,13 +82,15 @@ header {
     padding: 1rem;
 }
 
-.navigation-list, .navigation-list a {
+.navigation-list,
+.navigation-list a {
     justify-content: center;
     gap: 2rem;
     text-decoration: none;
     color: black;
     text-transform: uppercase;
 }
+
 .navigation-main-list:hover {
     text-decoration: underline;
 }
@@ -90,14 +103,16 @@ header {
     display: none;
     overflow: hidden;
 }
+
 .navigation-list-dropdown li {
     padding: .5rem;
 }
 
 .navigation-list-dropdown li:hover {
-   background-color: #e0e002;
-   transition: .25s;
+    background-color: #e0e002;
+    transition: .25s;
 }
+
 .hover-dropdown:hover .navigation-list-dropdown {
     display: block;
 }
@@ -132,17 +147,25 @@ header {
     height: 10rem;
     animation: object 40s linear infinite;
 }
+
 @keyframes object {
-    from { left: 0;}
-    to {left: 100vw;}
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 100vw;
+    }
 }
+
 @media (max-width:45rem) {
-    .animation-objects{
+    .animation-objects {
         height: 7rem;
     }
 }
+
 @media (max-width:30rem) {
-    .animation-objects{
+    .animation-objects {
         height: 5rem;
     }
 }
@@ -160,7 +183,7 @@ header {
     max-width: 70rem;
     gap: 3rem;
     background-color: rgb(247, 247, 247);
-    margin: 3rem  auto 2rem auto;
+    margin: 3rem auto 2rem auto;
     padding: 3rem 1rem 1rem 1rem;
     z-index: 1;
 }
@@ -169,17 +192,21 @@ header {
     gap: 2rem;
     flex-direction: column-reverse;
 }
+
 @media (min-width:45rem) {
-    .main-container{
+    .main-container {
         padding: 5rem 2rem 2rem 2rem;
-        margin: 2rem  auto 2rem auto;
+        margin: 2rem auto 2rem auto;
     }
+
     .column-container {
         flex-direction: row;
     }
+
     .main-column {
         width: 60%;
     }
+
     .main-column-second {
         width: 40%;
     }
@@ -190,6 +217,7 @@ header {
 .text-section-2 {
     margin-top: 1rem;
 }
+
 .poster {
     margin: 2rem 0;
 }
@@ -202,64 +230,74 @@ header {
     top: 30%;
     width: 20%;
 }
+
 .girl {
     width: 30%;
     margin-top: 4rem;
 }
 
 
-.grid-wrapper {
+.grid {
     margin-top: 2rem;
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: repeat(7, 1fr);
-    grid-template-areas: 
-    "e  f"
-    "e  g"
-    "b  b"
-    "c  d"
-    "a  a"
-    "h  h";
+    grid-template-areas:
+        "e  f"
+        "e  g"
+        "b  b"
+        "c  d"
+        "a  a"
+        "h  h";
 }
+
 @media (min-width:45rem) {
-    .grid-wrapper{
+    .grid {
         grid-template-columns: repeat(4, 1fr);
         grid-auto-rows: repeat(4, 1fr);
-        grid-template-areas: 
-        "a  a  c  d"
-        "a  a  e  f"
-        "a  a  e  g"
-        "b  b   h  h";
+        grid-template-areas:
+            "a  a  c  d"
+            "a  a  e  f"
+            "a  a  e  g"
+            "b  b   h  h";
     }
 }
 
-.grid-wrapper img{
+.grid img {
     width: 100%;
     object-fit: cover;
 }
-.img-a{
+
+.img-a {
     grid-area: a;
 }
-.img-b{
+
+.img-b {
     grid-area: b;
 }
-.img-c{
+
+.img-c {
     grid-area: c;
 }
-.img-d{
+
+.img-d {
     grid-area: d;
 }
-.img-e{
+
+.img-e {
     grid-area: e;
 }
-.img-f{
+
+.img-f {
     grid-area: f;
 }
-.img-g{
+
+.img-g {
     grid-area: g;
 }
-.img-h{
+
+.img-h {
     grid-area: h;
 }
 

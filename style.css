@@ -4,9 +4,10 @@
    box-sizing: border-box;
 }
 
-.home-body{
+.home-body {
    background-image: url();
 }
+
 .banksy-body {
    background-image: url(/Banksy/banksy-img/brickwall.jpeg);
    background-repeat: 4;
@@ -29,10 +30,12 @@
 .flex {
    display: flex;
 }
+
 img {
    object-fit: contain;
    max-width: 100%;
 }
+
 :root {
    --ff-title: 'Climate Crisis', cursive;
    --ff-h2-h6: 'Bebas Neue', sans-serif;
@@ -52,7 +55,10 @@ h1 {
    font-size: 3.2rem;
 }
 
-h2, h3, h4, h5 {
+h2,
+h3,
+h4,
+h5 {
    font-family: var(--ff-h2-h6);
    text-transform: uppercase;
 }
@@ -60,11 +66,13 @@ h2, h3, h4, h5 {
 h2 {
    font-size: 2rem;
 }
+
 h3 {
    font-size: 1.5rem;
 }
 
-p,a {
+p,
+a {
    font-family: Arial, Helvetica, sans-serif;
    font-size: 1rem;
    line-height: 1.5rem;
@@ -72,19 +80,24 @@ p,a {
 }
 
 @media (max-width:45rem) {
-   p, a {
+
+   p,
+   a {
       font-size: .85rem;
       line-height: 1.2rem;
    }
-   .obey-body h1{
+
+   .obey-body h1 {
       font-size: 7vw;
    }
-   .kh-body h1{
+
+   .kh-body h1 {
       font-size: 7vw;
    }
 }
+
 @media (max-width:63rem) {
-   .basquiat-body h1{
+   .basquiat-body h1 {
       font-size: 5vw;
    }
 }
@@ -92,7 +105,9 @@ p,a {
 
 
 
-ul, ol, li {
+ul,
+ol,
+li {
    list-style: none;
 }
 
@@ -110,21 +125,24 @@ ul, ol, li {
    background-color: var(--clr-header);
    z-index: 3;
 }
-.site__header__nav{
+
+.site__header__nav {
    justify-content: space-between;
    align-items: center;
-   margin: 0 5%; 
+   margin: 0 5%;
 }
 
 
-.site__logo{
+.site__logo {
    height: 2rem;
 }
+
 @media (max-width:45rem) {
-   .site__logo{
+   .site__logo {
       height: 1.8rem;
    }
-   h3{
+
+   h3 {
       font-size: 1.4rem;
    }
 }
@@ -142,8 +160,8 @@ ul, ol, li {
 
 
 
-.nav__list--dropdown:hover .nav__list--dropdown__list, 
-.nav__list--dropdown__list:hover .nav__list--dropdown__list{
+.nav__list--dropdown:hover .nav__list--dropdown__list,
+.nav__list--dropdown__list:hover .nav__list--dropdown__list {
    height: 12rem;
    transition: .2s ease-out;
 }
@@ -158,12 +176,14 @@ ul, ol, li {
    height: 0;
 }
 
-.nav__list--dropdown__list a{
+.nav__list--dropdown__list a {
    text-decoration: none;
 }
-.nav__list--dropdown__list li{
+
+.nav__list--dropdown__list li {
    padding: .5rem;
 }
+
 .nav__list--dropdown__list li:hover {
    background-color: #e0e002;
    transition: .2s;
@@ -177,13 +197,15 @@ ul, ol, li {
 
 
 /* ---------------LANDING PAGE-------------- */
-.landingpage__wrapper{
+.landingpage__wrapper {
    padding: 5rem 1rem;
 }
-.landingpage__title{
+
+.landingpage__title {
    font-size: 9vw;
 }
-.landingpage__textbox{
+
+.landingpage__textbox {
    margin-top: 3rem;
    max-width: 70rem;
 }
@@ -242,8 +264,9 @@ ul, ol, li {
    padding: 3rem 0 .5rem 0;
    background-color: var(--clr-header);
 }
-@media (max-width: 30rem){
-   .site__title{
+
+@media (max-width: 30rem) {
+   .site__title {
       padding: 3rem 0 .3rem 0;
    }
 }
@@ -288,8 +311,9 @@ ul, ol, li {
 .poster {
    margin: 2rem 0 3rem 0;
 }
-.mini-poster{
-   margin: 1rem 0 ;
+
+.mini-poster {
+   margin: 1rem 0;
 }
 
 
@@ -302,6 +326,7 @@ ul, ol, li {
    top: 30%;
    width: 20%;
 }
+
 .girl {
    width: 30%;
    margin-top: 4rem;
@@ -315,7 +340,7 @@ ul, ol, li {
 
 
 
-.grid-wrapper {
+.grid {
    margin-top: 2rem;
    display: grid;
    grid-gap: 1rem;
@@ -329,7 +354,8 @@ ul, ol, li {
       "a  a"
       "h  h";
 }
-.obey-body .grid-wrapper {
+
+.obey-body .grid {
    grid-template-areas:
       "e  f"
       "b  b"
@@ -341,7 +367,7 @@ ul, ol, li {
 }
 
 @media (min-width:45rem) {
-   .grid-wrapper {
+   .grid {
       grid-template-columns: repeat(4, 1fr);
       grid-auto-rows: repeat(4, 1fr);
       grid-template-areas:
@@ -350,7 +376,8 @@ ul, ol, li {
          "a  a  e  g"
          "b  b  h  h";
    }
-   .obey-body .grid-wrapper {
+
+   .obey-body .grid {
       grid-template-areas:
          "a  a  b  b"
          "d  d  d  e"
@@ -360,7 +387,7 @@ ul, ol, li {
 }
 
 
-.grid-wrapper img {
+.grid img {
    width: 100%;
 }
 

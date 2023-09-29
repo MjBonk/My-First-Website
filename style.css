@@ -4,6 +4,9 @@
    box-sizing: border-box;
 }
 
+.home-body{
+   background-image: url();
+}
 .banksy-body {
    background-image: url(/Banksy/banksy-img/brickwall.jpeg);
    background-repeat: 4;
@@ -16,8 +19,8 @@
 }
 
 .kh-body {
-   background-image: url(/k.h./kh-img/wallpaper.png);
-   background-size: 10rem;
+   background-image: url(/k.h./kh-img/black-wallpaper.jpg);
+   background-size: 20rem;
    background-repeat: repeat;
 }
 
@@ -58,7 +61,7 @@ h2 {
    font-size: 2rem;
 }
 h3 {
-   font-size: 1.6rem;
+   font-size: 1.5rem;
 }
 
 p,a {
@@ -66,7 +69,6 @@ p,a {
    font-size: 1rem;
    line-height: 1.5rem;
    color: rgb(33, 33, 33);
-   text-decoration: none;
 }
 
 @media (max-width:45rem) {
@@ -78,6 +80,13 @@ p,a {
       font-size: 7vw;
    }
 }
+@media (max-width:63rem) {
+   .basquiat-body h1{
+      font-size: 5vw;
+   }
+}
+
+
 
 ul, ol, li {
    list-style: none;
@@ -105,11 +114,11 @@ ul, ol, li {
 
 
 .site__logo{
-   height: 3rem;
+   height: 2rem;
 }
 @media (max-width:45rem) {
    .site__logo{
-      height: 2rem;
+      height: 1.8rem;
    }
    h3{
       font-size: 1.4rem;
@@ -125,6 +134,16 @@ ul, ol, li {
 
 
 
+
+
+
+
+.nav__list--dropdown:hover .nav__list--dropdown__list, 
+.nav__list--dropdown__list:hover .nav__list--dropdown__list{
+   height: 12rem;
+   transition: .2s ease-out;
+}
+
 .nav__list--dropdown__list {
    position: absolute;
    right: 3%;
@@ -135,26 +154,15 @@ ul, ol, li {
    height: 0;
 }
 
-.nav__list--dropdown:hover .nav__list--dropdown__list, 
-.nav__list--dropdown__list:hover .nav__list--dropdown__list{
-   height: 12rem;
-   transition: .2s ease-out;
+.nav__list--dropdown__list a{
+   text-decoration: none;
 }
-
 .nav__list--dropdown__list li{
    padding: .5rem;
 }
-
 .nav__list--dropdown__list li:hover {
    background-color: #e0e002;
    transition: .2s;
-}
-
-
-.site__title {
-   text-align: center;
-   padding: 3.2rem 0 1rem 0;
-   background-color: var(--clr-header);
 }
 
 
@@ -165,17 +173,16 @@ ul, ol, li {
 
 
 /* ---------------LANDING PAGE-------------- */
-.landing-page{
-   padding: 5rem 3rem;
+.landingpage__wrapper{
+   padding: 5rem 1rem;
 }
-.landing-page-title{
-   font-size: 5rem;
+.landingpage__title{
+   font-size: 9vw;
 }
-.landing-page-introtext{
-   margin-top: 5rem;
+.landingpage__textbox{
+   margin-top: 3rem;
+   max-width: 70rem;
 }
-
-
 
 
 
@@ -225,6 +232,14 @@ ul, ol, li {
 
 
 /* ---------------MAIN ---------------- */
+
+.site__title {
+   text-align: center;
+   padding: 3.2rem 0 1rem 0;
+   background-color: var(--clr-header);
+}
+
+
 .main__section {
    width: 90vw;
    max-width: 70rem;

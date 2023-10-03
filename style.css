@@ -170,6 +170,8 @@ li {
 .nav__list--dropdown__list:hover .nav__list--dropdown__list {
    height: 12rem;
    transition: .2s ease-out;
+   border: solid #e0e002;
+   border-top: 0;
 }
 
 .nav__list--dropdown__list {
@@ -288,8 +290,8 @@ li {
 
 
 .main__section {
-   width: 90vw;
-   max-width: 70rem;
+   width: 95vw;
+   max-width: 80rem;
    gap: 3rem;
    background-color: rgb(247, 247, 247);
    margin: -3rem auto 2rem auto;
@@ -326,7 +328,6 @@ li {
 .poster {
    margin: 2rem 0 3rem 0;
 }
-
 .mini-poster {
    margin: 1rem 0;
 }
@@ -341,7 +342,6 @@ li {
    top: 30%;
    width: 20%;
 }
-
 .girl {
    width: 30%;
    margin-top: 4rem;
@@ -355,6 +355,9 @@ li {
 
 
 
+
+
+/* --------GRID------- */
 
 .grid__title {
    margin-top: 2rem;

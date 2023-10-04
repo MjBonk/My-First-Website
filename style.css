@@ -88,7 +88,7 @@ li {
 /* ---------------BACKGROUNDS---------------- */
 
 .history-body {
-   background-image: url(/img/yellow-brick.jpeg);
+   background-image: url(/history/history.img/yellow-brick.jpeg);
    background-size: 30rem;
 }
 
@@ -259,13 +259,7 @@ li {
 .site__title {
    text-align: center;
    background-color: var(--clr-header);
-   padding: 3rem 0 .3rem 0;
-}
-
-@media (min-width: 30rem) {
-   .site__title {
-      padding: 3rem 0 .5rem 0;
-   }
+   padding: 2rem 0 1rem 0;
 }
 
 
@@ -279,10 +273,6 @@ li {
    z-index: 1;
 }
 
-.main__column-wrapper {
-   gap: 2rem;
-   flex-direction: column;
-}
 
 @media (min-width:45rem) {
    .main {
@@ -290,7 +280,8 @@ li {
    }
 
    .main__column-wrapper {
-      flex-direction: row;
+      display: flex;
+      gap: 2rem;
    }
 
    .main__column-left {
@@ -305,30 +296,14 @@ li {
 
 
 
+/* MAIN CONTENT*/
+
 .poster {
    margin: 2rem 0 3rem 0;
 }
-
 .mini-poster {
    margin: 1rem 0;
 }
-
-
-
-
-.baloon {
-   align-self: flex-start;
-   justify-content: end;
-   position: sticky;
-   top: 30%;
-   width: 20%;
-}
-
-.girl {
-   width: 30%;
-   margin-top: 4rem;
-}
-
 .float-img {
    float: left;
    margin: 1rem 1rem 0 1rem;
@@ -336,19 +311,35 @@ li {
 
 
 
-
-.aside {
-   background-color: lightgray;
-   padding: 1rem;
+/* BANKSY STICKY GIRL WITH BALLOOON  */
+.baloon {
+   align-self: flex-start;
+   justify-content: end;
+   position: sticky;
+   top: 30%;
+   width: 20%;
+}
+.girl {
+   width: 30%;
+   margin-top: 4rem;
 }
 
-.aside__grid_img-float {
+
+
+/* HISTORY SITE  */
+.article__cornbread {
+   background-color: lightgray;
+   padding: 1rem;
+   margin: 1rem 0;
+}
+.article__img-float {
    float: left;
-   margin: 2rem 1rem;
+   margin: 2rem 1rem 1rem 0rem;
    width: 50%;
    border-radius: 50%;
    shape-outside: margin-box;
 }
+
 
 
 
@@ -489,6 +480,6 @@ li {
 /* ---------------FOOTER---------------- */
 footer {
    background-color: var(--clr-header);
-   padding: 5rem;
+   padding: 5rem 1rem;
    text-align: center;
 }

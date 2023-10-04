@@ -4,8 +4,9 @@
    box-sizing: border-box;
 }
 
-.home-body {
-   background-color: rgb(219, 219, 216);
+.history-body {
+   background-image: url(/img/yellow-brick.jpeg);
+   background-size: 30rem;
 }
 
 .banksy-body {
@@ -213,6 +214,7 @@ li {
 .landingpage__title {
    font-size: 7vw;
 }
+
 .landingpage__textbox {
    max-width: 70rem;
 }
@@ -230,21 +232,21 @@ li {
 
 
 
-/* ---------------HERO ---------------- */
-.hero__wrapper {
+/* ---------------MARQUEE ---------------- */
+.marquee {
    justify-content: space-around;
    overflow: hidden;
    margin: 2rem 0 0em -100vw;
 }
 
-.hero__object {
+.marquee__content {
    position: relative;
    z-index: 2;
    height: 10rem;
-   animation: object 60s linear infinite;
+   animation: content 60s linear infinite;
 }
 
-@keyframes object {
+@keyframes content {
    from {
       left: 0;
    }
@@ -255,14 +257,14 @@ li {
 }
 
 @media (max-width:45rem) {
-   .hero__object {
+   .marquee__content {
       height: 7rem;
       animation: object 40s linear infinite;
    }
 }
 
 @media (max-width:30rem) {
-   .hero__object {
+   .marquee__content {
       height: 5rem;
    }
 }
@@ -289,7 +291,9 @@ li {
 }
 
 
-.main__section {
+
+
+.main {
    width: 95vw;
    max-width: 80rem;
    gap: 3rem;
@@ -305,7 +309,7 @@ li {
 }
 
 @media (min-width:45rem) {
-   .main__section {
+   .main {
       padding: 4rem 2rem 2rem 2rem;
    }
 
@@ -328,6 +332,7 @@ li {
 .poster {
    margin: 2rem 0 3rem 0;
 }
+
 .mini-poster {
    margin: 1rem 0;
 }
@@ -342,6 +347,7 @@ li {
    top: 30%;
    width: 20%;
 }
+
 .girl {
    width: 30%;
    margin-top: 4rem;
@@ -353,6 +359,20 @@ li {
 }
 
 
+
+
+.aside {
+   background-color: lightgray;
+   padding: 1rem;
+}
+
+.aside__img-float {
+   float: left;
+   margin: 2rem 1rem;
+   width: 50%;
+   border-radius: 50%;
+   shape-outside: margin-box;
+}
 
 
 
@@ -445,54 +465,54 @@ li {
    }
 }
 
-   .grid img {
-      width: 100%;
-   }
+.grid img {
+   width: 100%;
+}
 
-   .img-a {
-      grid-area: a;
-   }
+.img-a {
+   grid-area: a;
+}
 
-   .img-b {
-      grid-area: b;
-   }
+.img-b {
+   grid-area: b;
+}
 
-   .img-c {
-      grid-area: c;
-   }
+.img-c {
+   grid-area: c;
+}
 
-   .img-d {
-      grid-area: d;
-   }
+.img-d {
+   grid-area: d;
+}
 
-   .img-e {
-      grid-area: e;
-   }
+.img-e {
+   grid-area: e;
+}
 
-   .img-f {
-      grid-area: f;
-   }
+.img-f {
+   grid-area: f;
+}
 
-   .img-g {
-      grid-area: g;
-   }
+.img-g {
+   grid-area: g;
+}
 
-   .img-h {
-      grid-area: h;
-   }
+.img-h {
+   grid-area: h;
+}
 
-   .img-i {
-      grid-area: i;
-   }
-
-
+.img-i {
+   grid-area: i;
+}
 
 
 
 
-   /* ---------------FOOTER---------------- */
-   footer {
-      background-color: var(--clr-header);
-      padding: 5rem;
-      text-align: center;
-   }
+
+
+/* ---------------FOOTER---------------- */
+footer {
+   background-color: var(--clr-header);
+   padding: 5rem;
+   text-align: center;
+}

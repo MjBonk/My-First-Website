@@ -203,11 +203,11 @@ header {
         flex-direction: row;
     }
 
-    .main-column {
+    .main__column-left {
         width: 60%;
     }
 
-    .main-column-second {
+    .main__column-right {
         width: 40%;
     }
 }
@@ -266,35 +266,35 @@ header {
     object-fit: cover;
 }
 
-.img-a {
+.grid_img-a {
     grid-area: a;
 }
 
-.img-b {
+.grid_img-b {
     grid-area: b;
 }
 
-.img-c {
+.grid_img-c {
     grid-area: c;
 }
 
-.img-d {
+.grid_img-d {
     grid-area: d;
 }
 
-.img-e {
+.grid_img-e {
     grid-area: e;
 }
 
-.img-f {
+.grid_img-f {
     grid-area: f;
 }
 
-.img-g {
+.grid_img-g {
     grid-area: g;
 }
 
-.img-h {
+.grid_img-h {
     grid-area: h;
 }
 

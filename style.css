@@ -133,7 +133,6 @@ li {
    margin: 0 5%;
 }
 
-
 .logo {
    height: 1.8rem;
 }
@@ -142,7 +141,6 @@ li {
    .logo {
       height: 2rem;
    }
-
 }
 
 .header__nav-list {
@@ -153,13 +151,10 @@ li {
 }
 
 
-
-
 /* -DROPDOWN- */
-
 .header__nav-list__dropdown:hover .header__nav-list__dropdown-list,
 .header__nav-list__dropdown-list:hover .header__nav-list__dropdown-list {
-   height: 12rem;
+   height: 11rem;
    transition: .2s ease-out;
    border: solid var(--clr-darker-yellow);
    border-top: 0;
@@ -197,13 +192,33 @@ li {
 .landingpage__main {
    padding: 2rem 1rem 1rem 1rem;
    height: 100vh;
+   flex-direction: column;
+   justify-content: space-between;
 }
 
 .main__title {
    font-size: 7vw;
 }
 
+.hej {
+   width: 7rem;
+   height: 7rem;
+   background-color: black;
+}
 
+.hej::before {
+   content: "";
+   display: block;
+   width: 10px;
+   height: 10px;
+   background-color: green;
+}
+
+.animation-list {
+   margin: 0 auto;
+   width: 90vw;
+   justify-content: space-around;
+}
 
 
 
@@ -213,7 +228,7 @@ li {
 .marquee {
    justify-content: space-around;
    overflow: hidden;
-   margin: 2rem 0 0em -100vw;
+   margin: 2rem 0 -5rem -100vw;
 }
 
 .marquee__content {
@@ -262,21 +277,24 @@ li {
    padding: 2rem 0 1rem 0;
 }
 
+.history-body main {
+   padding: 1rem;
+}
 
 .main {
    width: 95vw;
    max-width: 80rem;
    gap: 3rem;
    background-color: rgb(247, 247, 247);
-   margin: -3rem auto 2rem auto;
-   padding: 4rem 1rem 1rem 1rem;
+   margin: 2rem auto;
    z-index: 1;
+   padding: 3rem 1rem 1rem 1rem;
 }
 
 
 @media (min-width:45rem) {
    .main {
-      padding: 4rem 2rem 2rem 2rem;
+      padding: 4rem 1.5rem 2rem 1.5rem;
    }
 
    .main__column-wrapper {
@@ -295,15 +313,16 @@ li {
 
 
 
-
 /* MAIN CONTENT*/
 
 .poster {
    margin: 2rem 0 3rem 0;
 }
+
 .mini-poster {
    margin: 1rem 0;
 }
+
 .float-img {
    float: left;
    margin: 1rem 1rem 0 1rem;
@@ -319,6 +338,7 @@ li {
    top: 30%;
    width: 20%;
 }
+
 .girl {
    width: 30%;
    margin-top: 4rem;
@@ -332,6 +352,7 @@ li {
    padding: 1rem;
    margin: 1rem 0;
 }
+
 .article__img-float {
    float: left;
    margin: 2rem 1rem 1rem 0rem;

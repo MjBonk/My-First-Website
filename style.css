@@ -25,11 +25,13 @@ img {
 
 
 
+
+
 /* ---------------TEXT---------------- */
 h1 {
    text-transform: uppercase;
    font-family: var(--ff-title);
-   font-size: 7vw;
+   font-size: 8vw;
 }
 
 h3 {
@@ -85,8 +87,13 @@ li {
 
 
 
-/* ---------------BACKGROUNDS---------------- */
 
+
+
+/* ---------------BACKGROUNDS---------------- */
+.landingpage-body{
+   background-color: rgb(235, 235, 235);
+}
 .history-body {
    background-image: url(/history/history.img/yellow-brick.jpeg);
    background-size: 30rem;
@@ -151,10 +158,11 @@ li {
 }
 
 
+
 /* -DROPDOWN- */
 .header__nav-list__dropdown:hover .header__nav-list__dropdown-list,
 .header__nav-list__dropdown-list:hover .header__nav-list__dropdown-list {
-   height: 11rem;
+   height: 12rem;
    transition: .2s ease-out;
    border: solid var(--clr-darker-yellow);
    border-top: 0;
@@ -188,37 +196,70 @@ li {
 
 
 
+
+
+
 /* ---------------LANDING PAGE-------------- */
 .landingpage__main {
    padding: 2rem 1rem 1rem 1rem;
    height: 100vh;
    flex-direction: column;
    justify-content: space-between;
+   overflow: hidden;
 }
 
-.main__title {
+.landingpage__section{
+   max-width: 60rem;
+}
+.landingpage__title {
    font-size: 7vw;
 }
 
-.hej {
-   width: 7rem;
-   height: 7rem;
-   background-color: black;
-}
 
-.hej::before {
-   content: "";
-   display: block;
-   width: 10px;
-   height: 10px;
-   background-color: green;
-}
+
+
 
 .animation-list {
-   margin: 0 auto;
-   width: 90vw;
-   justify-content: space-around;
+   justify-content: center;
+   align-items: flex-end;
+   gap: 12rem;
 }
+
+.animation-list__img::before {
+   margin-right: .5rem;
+   width: 12px;
+   height: 30rem;
+   content: "";
+   display: block;
+   flex: none;
+   background-color: black;
+   border-radius: 50px;
+}
+
+.animation-list__img {
+   width: 100px;
+   height: 100px;
+}
+
+.animation-list__text {
+   margin: 1rem 0 0 1.5rem;
+   gap: 1rem;
+   overflow: hidden;
+}
+
+
+
+.animation-list__content {
+   width: 1rem;
+   height: 10rem;
+   transition: all 1s;
+}
+.animation-list__content:hover {
+   width: 20rem;
+   height: 20rem;
+}
+
+
 
 
 
@@ -228,7 +269,7 @@ li {
 .marquee {
    justify-content: space-around;
    overflow: hidden;
-   margin: 2rem 0 -5rem -100vw;
+   margin: 2rem 0 -4rem -100vw;
 }
 
 .marquee__content {
@@ -242,12 +283,16 @@ li {
    .marquee__content {
       height: 7rem;
    }
+}
 
-   @media (min-width:45rem) {
-      .marquee__content {
-         animation: content 60s linear infinite;
-         height: 10rem;
-      }
+@media (min-width:45rem) {
+   .marquee__content {
+      animation: content 60s linear infinite;
+      height: 10rem;
+   }
+
+   .marquee {
+      margin: 2rem 0 -5rem -100vw;
    }
 }
 
@@ -314,7 +359,6 @@ li {
 
 
 /* MAIN CONTENT*/
-
 .poster {
    margin: 2rem 0 3rem 0;
 }

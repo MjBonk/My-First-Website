@@ -4,11 +4,15 @@
    box-sizing: border-box;
 }
 
-
 img {
    object-fit: contain;
    max-width: 100%;
 }
+
+.flex {
+   display: flex;
+}
+
 
 :root {
    --ff-title: 'Climate Crisis', cursive;
@@ -20,9 +24,6 @@ img {
    --clr-landingpage: lightgray;
 }
 
-.flex {
-   display: flex;
-}
 
 
 
@@ -47,7 +48,6 @@ h5 {
    text-transform: uppercase;
 }
 
-
 p,
 a {
    font-family: Arial, Helvetica, sans-serif;
@@ -56,6 +56,11 @@ a {
    color: var(--clr-almost-black);
 }
 
+ul,
+ol,
+li {
+   list-style: none;
+}
 
 @media (min-width:45rem) {
 
@@ -77,15 +82,6 @@ a {
       font-size: 1.4rem;
    }
 }
-
-
-
-ul,
-ol,
-li {
-   list-style: none;
-}
-
 
 
 
@@ -119,7 +115,7 @@ li {
 }
 
 .kh-body {
-   background-image: url(/k.h./kh-img/black-wallpaper.jpg);
+   background-image: url(/k.h./kh-img/wp19963501.jpg);
    background-size: 20rem;
    background-repeat: repeat;
 }
@@ -202,7 +198,6 @@ li {
 
 
 /* ---------------LANDING PAGE-------------- */
-
 .landingpage__main {
    padding-top: 2rem;
    height: 100vh;
@@ -228,52 +223,8 @@ li {
 }
 
 
-/* 
 
-.animation-list {
-   justify-content: center;
-   align-items: flex-end;
-   gap: 10%;
-}
-.animation-list__img {
-   width: 100px;
-   height: 100px;
-   margin-right: 50%;
-   transform: translate(-19px);
-}
-
-.animation-list__text {
-   margin: 1rem 0 0 1.5rem;
-   gap: 1rem;
-   overflow: hidden;
-   line-break: anywhere;
-}
-.animation-list__text::before {
-   margin-right: .5rem;
-   width: 12px;
-   height: 30rem;
-   content: "";
-   display: block;
-   flex: none;
-   background-color: black;
-   border-radius: 50px;
-}
-
-
-
-.animation-list__content {
-   width: 3rem;
-   height: 10rem;
-   transition: all 1s;
-}
-
-.animation-list__content:hover {
-   width: 15rem;
-   height: 15rem;
-} 
-
- */
-
+/* LANDINGPAGE ANIMATION */
 .animation-list {
    flex-direction: column;
    align-items: flex-end;
@@ -317,51 +268,52 @@ li {
    height: 3rem;
 }
 
-
-
-
-@media (min-width:45rem){
+@media (min-width:40rem) {
    .animation-list {
       flex-direction: row;
-      gap: 10%;
+      gap: 7rem;
    }
-   
+
    .animation-list__img {
       width: 100px;
       height: 100px;
       margin-left: -45px;
       flex: none;
    }
-   
+
    .animation-list__text-wrapper {
       padding-top: 30px;
       display: flex;
    }
-   
+
    .animation-list__text {
       padding: 2rem 0 0 1rem;
       overflow: hidden;
       line-break: anywhere;
    }
-   
+
    .animation-list__text-wrapper::before {
       width: 12px;
       height: 30rem;
       flex: none;
    }
-   
+
    .animation-list__content {
       width: 1rem;
       height: 12rem;
       flex-direction: column;
    }
-   
+
    .animation-list__content:hover {
       width: 15rem;
       height: 20rem;
    }
-   
+
 }
+
+
+
+
 
 
 /* ---------------MARQUEE ---------------- */
@@ -435,7 +387,6 @@ li {
    padding: 3rem 1rem 1rem 1rem;
 }
 
-
 @media (min-width:45rem) {
    .main {
       padding: 4rem 1.5rem 2rem 1.5rem;
@@ -456,8 +407,6 @@ li {
 }
 
 
-
-/* MAIN CONTENT*/
 .poster {
    margin: 2rem 0 3rem 0;
 }
@@ -470,6 +419,7 @@ li {
    float: left;
    margin: 1rem 1rem 0 1rem;
 }
+
 
 
 
@@ -503,6 +453,9 @@ li {
    border-radius: 50%;
    shape-outside: margin-box;
 }
+
+
+
 
 
 

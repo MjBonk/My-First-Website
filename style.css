@@ -158,8 +158,7 @@ li {
 
 
 /* -DROPDOWN- */
-.header__nav-list__dropdown:hover .header__nav-list__dropdown-list,
-.header__nav-list__dropdown-list:hover .header__nav-list__dropdown-list {
+.header__nav-list__dropdown:hover .header__nav-list__dropdown-list {
    height: 12rem;
    transition: .2s ease-out;
    border: solid var(--clr-darker-yellow);

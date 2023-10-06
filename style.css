@@ -17,7 +17,7 @@ img {
    --clr-darker-yellow: #e0e002;
    --clr-almost-black: rgb(33, 33, 33);
    --clr-almost-white: rgb(247, 247, 247);
-   --clr-landingpage: lightgray; 
+   --clr-landingpage: lightgray;
 }
 
 .flex {
@@ -93,7 +93,7 @@ li {
 
 /* ---------------BACKGROUNDS---------------- */
 .landingpage-body {
-   background-color:lightgray;
+   background-color: lightgray;
 }
 
 .history-body {
@@ -202,38 +202,38 @@ li {
 
 
 /* ---------------LANDING PAGE-------------- */
+
 .landingpage__main {
-   padding: 2rem 0 0 0;
+   padding-top: 2rem;
    height: 100vh;
    flex-direction: column;
    justify-content: space-between;
    overflow: hidden;
-   position: relative;
    z-index: 2;
 }
 
 .banner {
    background-color: var(--clr-almost-black);
    color: var(--clr-almost-white);
-   padding: 1rem 2rem;
+   padding: 1rem;
 }
 
 .banner__title {
    font-size: 8vw;
 }
-.intro-text{
-   padding: 1rem 2rem ;
-   max-width: 65rem;
+
+.intro-text {
+   padding: 1rem;
+   max-width: 60rem;
 }
 
 
-
-
+/* 
 
 .animation-list {
    justify-content: center;
    align-items: flex-end;
-   gap: 7rem;
+   gap: 10%;
 }
 .animation-list__img {
    width: 100px;
@@ -270,9 +270,52 @@ li {
 .animation-list__content:hover {
    width: 15rem;
    height: 15rem;
+} 
+
+ */
+
+.animation-list {
+   flex-direction: column;
+   align-items: flex-end;
+   justify-content: center;
+   height: 100%;
+   gap: 15%;
 }
 
+.animation-list__img {
+   width: 60px;
+   height: 60px;
+   flex: none;
+}
 
+.animation-list__text-wrapper {
+   padding-top: 30px;
+}
+
+.animation-list__text {
+   padding-left: 3rem;
+}
+
+.animation-list__text-wrapper::before {
+   width: 100rem;
+   height: 12px;
+   content: "";
+   display: block;
+   flex: none;
+   background-color: black;
+   border-radius: 50px;
+}
+
+.animation-list__content {
+   width: 6rem;
+   height: 1rem;
+   transition: all 1s;
+}
+
+.animation-list__content:hover {
+   width: 15rem;
+   height: 3rem;
+}
 
 
 

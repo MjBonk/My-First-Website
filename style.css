@@ -313,10 +313,55 @@ li {
 }
 
 .animation-list__content:hover {
-   width: 15rem;
+   width: 17rem;
    height: 3rem;
 }
 
+
+
+
+@media (min-width:45rem){
+   .animation-list {
+      flex-direction: row;
+      gap: 10%;
+   }
+   
+   .animation-list__img {
+      width: 100px;
+      height: 100px;
+      margin-left: -45px;
+      flex: none;
+   }
+   
+   .animation-list__text-wrapper {
+      padding-top: 30px;
+      display: flex;
+   }
+   
+   .animation-list__text {
+      padding: 2rem 0 0 1rem;
+      overflow: hidden;
+      line-break: anywhere;
+   }
+   
+   .animation-list__text-wrapper::before {
+      width: 12px;
+      height: 30rem;
+      flex: none;
+   }
+   
+   .animation-list__content {
+      width: 1rem;
+      height: 12rem;
+      flex-direction: column;
+   }
+   
+   .animation-list__content:hover {
+      width: 15rem;
+      height: 20rem;
+   }
+   
+}
 
 
 /* ---------------MARQUEE ---------------- */

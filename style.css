@@ -138,12 +138,12 @@ li {
    margin: 0 5%;
 }
 
-.logo {
+.header__nav-logo {
    height: 1.8rem;
 }
 
 @media (min-width:45rem) {
-   .logo {
+   .header__nav-logo {
       height: 2rem;
    }
 }
